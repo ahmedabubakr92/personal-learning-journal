@@ -3,7 +3,7 @@
 A **mobile-first, fully responsive learning journal blog** built from scratch using **modern HTML & CSS best practices**.  
 This project is part of my learning journey through **Scrimba**, where I'm turning concepts into real layouts and improving step-by-step.
 
-**Live Demo:** [Will add later]
+**Live Demo:** [Learning Journal](https://ahmed-learning-journal.netlify.app)
 
 ## 🎯 The Mission
 The goal of this project was to move beyond tutorials and build a production-ready layout using **Vanilla HTML & CSS**. I built this "mobile-first," meaning the design starts on small screens and adapts to desktops using media queries—ensuring a perfect experience on any device.
@@ -28,7 +28,7 @@ The goal of this project was to move beyond tutorials and build a production-rea
 - **📐 Responsive Design:** Uses relative units (`rem`, `%`, `vw`) and CSS Grid/Flexbox.
 - **🎨 Modern Styling:** Built with CSS Variables for consistent theming.
 - **🧱 Semantic HTML:** Accessible, clean code structure (no `div` soup!).
-- **✨ Custom Content:** Featuring real stories from my learning experience transitioning from data science to full-stack development.
+- **✨ Custom Content:** Featuring real stories from my learning experience transitioning from data analysis to full-stack development.
 - **🍔 Hamburger Menu:** Mobile-friendly navigation with smooth animations.
 - **📄 Three Complete Pages:** Home, About Me, and Blog Post detail pages.
 
@@ -67,7 +67,7 @@ This project is built based on a Figma design, focusing on:
 - [ ] Implement search functionality
 
 ## 👨‍💻 About Me
-I'm **Ahmed AbuBakr**, a developer based in the UAE, transitioning from data science to full-stack development. This learning journal documents my journey through Scrimba's Full-Stack Developer Career Path, where I'm building real projects and mastering modern web technologies.
+I'm **Ahmed AbuBakr**, a developer based in the UAE, transitioning from data analysis to full-stack development. This learning journal documents my journey through Scrimba's Full-Stack Developer Career Path, where I'm building real projects and mastering modern web technologies.
 
 **Connect with me:**
 - 🌐 [LinkedIn](https://www.linkedin.com/in/ahmed-al-fehail/)
