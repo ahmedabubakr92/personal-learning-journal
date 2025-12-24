@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning Journal | Ahmed AbuBakr</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="My Learning Journal Logo" class="logo-img">
+                    <span>My Learning Journal</span>
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="main-nav" id="mainNav">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT ME</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article class="hero-post">
+            <div class="container">
+                <img src="images/article-image-hero.png" class="hero-bg-img" alt="Laptop with code on screen sitting on a desk">
+                
+                <div class="hero-text-container">
+                    <p class="article-date">DECEMBER 24, 2025</p>
+                    <h2 class="hero-title">My new journey as a Scrimba student.</h2>
+                    <p class="hero-body">
+                        After exploring data analysis and data science, I've made the exciting transition to full-stack development through Scrimba's Full-Stack Developer Career Path. I'm building real projects, learning modern web technologies, and documenting my progress every step of the way.
+                    </p>
+                    <div style="margin-top: 1.5em; font-size: 0.875rem; opacity: 0.95;">
+                        👉 <strong><a href="https://scrimba.com/?via=u414bb3c" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: underline;">Check out Scrimba's Full-Stack Developer Career Path</a></strong><br>
+                        <em style="font-size: 0.8125rem;">This is an affiliate link that helps support my learning journey at no extra cost to you. You may also receive a discount!</em>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <section class="recent-posts container">
+            <h2 class="recent-posts-title">Recent posts</h2>
+            <div class="posts-grid">
+                <a href="post.html" class="post-card-link">
+                    <article class="post-card">
+                        <img src="images/restaurant_app_images/restaurant-app-1.jpeg" alt="Jimmy's Diner restaurant ordering app interface" class="post-image">
+                        <p class="post-date">DECEMBER 17, 2025</p>
+                        <h3 class="post-title">Building Jimmy's Diner: My First Functional Ordering Engine</h3>
+                        <p class="post-preview">
+                            I just shipped my latest solo project: Jimmy's Diner—a fully functional ordering engine built from scratch with Vanilla JavaScript. This project taught me about data-driven UI rendering, state management, and the importance of properly resetting state (even when battling a "Ghost Cart" bug!).
+                        </p>
+                    </article>
+                </a>
+
+                <a href="oldagram-post.html" class="post-card-link">
+                    <article class="post-card">
+                        <img src="images/oldagram/oldagram_2.jpeg" alt="Oldagram Instagram clone interface" class="post-image">
+                        <p class="post-date">DECEMBER 3, 2025</p>
+                        <h3 class="post-title">From Figma to Code: Building Oldagram</h3>
+                        <p class="post-preview">
+                            I just shipped "Oldagram"—an Instagram feed clone built from a Figma design file with no starter code. This project took me through the complete frontend workflow: mobile-first CSS Flexbox layout, refactoring to reusable JavaScript templates, and implementing a custom state management system with a double-tap-to-like feature.
+                        </p>
+                    </article>
+                </a>
+
+                <a href="password-generator-post.html" class="post-card-link">
+                    <article class="post-card">
+                        <img src="images/password_generator/password_generator_1.png" alt="Password generator interface" class="post-image">
+                        <p class="post-date">NOVEMBER 22, 2025</p>
+                        <h3 class="post-title">No More Weak Passwords: Building a Random Password Generator</h3>
+                        <p class="post-preview">
+                            Just finished building a random password generator using HTML, CSS, and JavaScript. It's simple, fast, and helps keep things secure. Built as part of the amazing Scrimba Full-Stack Developer Career Path.
+                        </p>
+                    </article>
+                </a>
+
+                <a href="yellowpages-scraper-post.html" class="post-card-link">
+                    <article class="post-card">
+                        <img src="images/yellowpage_sraper/yellowpage_scraper_1.jpeg" alt="YellowPages UAE Scraper interface" class="post-image">
+                        <p class="post-date">AUGUST 26, 2025</p>
+                        <h3 class="post-title">YellowPages UAE Scraper: Automating Business Lead Generation</h3>
+                        <p class="post-preview">
+                            I built this to help businesses and freelancers automate the process of finding verified UAE business contacts. No more endless copy-paste—get a clean Excel file in minutes! Built with Python, Selenium, Streamlit, and pandas.
+                        </p>
+                    </article>
+                </a>
+
+                <a href="real-estate-analysis-post.html" class="post-card-link">
+                    <article class="post-card">
+                        <img src="images/real_estate_analysis/price_trends_over_time.png" alt="Real estate price trends analysis visualization" class="post-image">
+                        <p class="post-date">FEBRUARY 16, 2025</p>
+                        <h3 class="post-title">Real Estate Market Analysis: Mina Rashid & Dubai Maritime City</h3>
+                        <p class="post-preview">
+                            Dubai's real estate market is evolving fast, and I've taken a data-driven approach to analyze Mina Rashid & Dubai Maritime City. Key insights: median prices per sqm, top developers, and investment strategies for both areas.
+                        </p>
+                    </article>
+                </a>
+            </div>
+            <a href="#" class="view-more-btn" id="viewMoreBtn">View More</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">My Learning Journal</p>
+            <p class="copyright">Copyright © 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger menu functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.getElementById('mainNav');
+        
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener('click', () => {
+                mainNav.classList.toggle('nav-open');
+                menuToggle.classList.toggle('menu-open');
+            });
+        }
+    </script>
+
+</body>
+</html>

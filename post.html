@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Jimmy's Diner: My First Functional Ordering Engine | My Learning Journal</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="My Learning Journal Logo" class="logo-img">
+                    <span>My Learning Journal</span>
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="main-nav" id="mainNav">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT ME</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="blog-post">
+            <p class="article-date">DECEMBER 10, 2025</p>
+            <h1 class="blog-post-title">Building Jimmy's Diner: My First Functional Ordering Engine</h1>
+            <p class="blog-post-intro">
+                I just shipped my latest solo project: <strong>Jimmy's Diner</strong>—a fully functional ordering engine built entirely from scratch with Vanilla JavaScript. The goal? Move beyond static websites and build a dynamic application with real logic. No frameworks, no libraries—just raw JavaScript.
+            </p>
+            <img src="images/restaurant_app_images/restaurant-app-1.jpeg" alt="Jimmy's Diner restaurant ordering interface showing menu items" class="blog-post-image">
+            
+            <h2 class="blog-section-title">The Data Engine</h2>
+            <p class="blog-paragraph">
+                Instead of hard-coding the menu in HTML, I built a system that renders the UI entirely from a data array. This approach means that if the data changes, the site updates instantly. This was a crucial learning moment—understanding how to separate data from presentation and create dynamic, data-driven interfaces.
+            </p>
+            <p class="blog-paragraph">
+                By structuring the menu items as JavaScript objects in an array, I learned the power of mapping over data to generate HTML. This pattern is fundamental in modern web development, and building it from scratch helped me truly understand how frameworks like React handle rendering behind the scenes.
+            </p>
+
+            <h2 class="blog-section-title">The Logic: Cart Functionality</h2>
+            <p class="blog-paragraph">
+                I implemented full cart functionality—adding items, removing them, and calculating totals in real-time. This forced me to really understand how to sync the <strong>State</strong> (the data) with the <strong>UI</strong> (what the user sees).
+            </p>
+            <img src="images/restaurant_app_images/restaurant-app-2.jpeg" alt="Jimmy's Diner cart with order items and total price" class="blog-post-image">
+            <p class="blog-paragraph">
+                Managing state in vanilla JavaScript taught me the importance of having a single source of truth. Every time a user adds or removes an item, I had to update the data structure and then re-render the appropriate parts of the UI. This process of thinking through state management was invaluable, and it's a concept that translates directly to more advanced frameworks.
+            </p>
+
+            <h2 class="blog-section-title">The Payment Modal</h2>
+            <p class="blog-paragraph">
+                I built a payment modal that overlays the main interface, allowing users to enter their card details to complete their order. This introduced me to modal patterns, form handling, and user experience considerations around payment flows.
+            </p>
+            <img src="images/restaurant_app_images/restaurant-app-3.jpeg" alt="Jimmy's Diner payment modal with card details form" class="blog-post-image">
+
+            <h2 class="blog-section-title">The "Ghost" in the Machine 👻</h2>
+            <p class="blog-paragraph">
+                Here's the best part of the learning process—it's not perfect yet! I'm currently tackling a "Ghost Cart" bug. The issue: After a user pays and completes the order, the orderArray doesn't clear properly. If you add a new item, the old items "resurrect" in the background!
+            </p>
+            <p class="blog-paragraph">
+                The lesson: It's teaching me the hard way why "resetting state" is just as important as building it. Debugging this bug has been an incredible learning experience—it's forced me to trace through my code flow, understand the order of operations, and think critically about state management.
+            </p>
+            <p class="blog-paragraph">
+                This bug is actually a perfect example of why building projects is so valuable. I'm learning not just how to build features, but how to debug complex issues and understand the importance of proper state cleanup. Every bug is a lesson!
+            </p>
+
+            <h2 class="blog-section-title">What I Learned</h2>
+            <p class="blog-paragraph">
+                This project was a major step forward in my learning journey. I moved from building static layouts to creating dynamic, interactive applications. I learned about:
+            </p>
+            <ul class="blog-list">
+                <li>Data-driven UI rendering</li>
+                <li>State management in vanilla JavaScript</li>
+                <li>Event handling and user interactions</li>
+                <li>Modal patterns and form handling</li>
+                <li>The importance of proper state cleanup</li>
+                <li>Debugging complex state-related bugs</li>
+            </ul>
+
+            <p class="blog-paragraph">
+                A special shout out to my mentor <strong>Thomas Chant</strong> from Scrimba for the guidance and support throughout this project.
+            </p>
+
+            <p class="blog-paragraph">
+                <strong><a href="https://restaurant-ordering-ahmed.netlify.app" target="_blank" rel="noopener noreferrer">Check out the live demo here →</a></strong>
+            </p>
+
+            <img src="images/restaurant_app_images/restaurant-app-4.jpeg" alt="Jimmy's Diner order confirmation screen" class="blog-post-image">
+
+            <p class="blog-paragraph" style="margin-top: 2em; padding-top: 1.5em; border-top: 1px solid #e0e0e0;">
+                👉 <strong><a href="https://scrimba.com/?via=u414bb3c" target="_blank" rel="noopener noreferrer">Check out Scrimba's Full-Stack Developer Career Path</a></strong><br>
+                <em style="font-size: 0.9375rem;">This is an affiliate link that helps support my learning journey at no extra cost to you. You may also receive a discount!</em>
+            </p>
+        </article>
+
+        <section class="recent-posts">
+            <h2 class="recent-posts-title">Recent posts</h2>
+            <div class="posts-grid">
+                <a href="post.html" class="post-card-link">
+                    <article class="post-card">
+                        <img src="images/restaurant_app_images/restaurant-app-1.jpeg" alt="Jimmy's Diner restaurant ordering app interface" class="post-image">
+                        <p class="post-date">DECEMBER 10, 2025</p>
+                        <h3 class="post-title">Building Jimmy's Diner: My First Functional Ordering Engine</h3>
+                        <p class="post-preview">
+                            I just shipped my latest solo project: Jimmy's Diner—a fully functional ordering engine built from scratch with Vanilla JavaScript. This project taught me about data-driven UI rendering, state management, and the importance of properly resetting state (even when battling a "Ghost Cart" bug!).
+                        </p>
+                    </article>
+                </a>
+
+                <a href="oldagram-post.html" class="post-card-link">
+                    <article class="post-card">
+                        <img src="images/oldagram/oldagram_2.jpeg" alt="Oldagram Instagram clone interface" class="post-image">
+                        <p class="post-date">NOVEMBER 27, 2025</p>
+                        <h3 class="post-title">From Figma to Code: Building Oldagram</h3>
+                        <p class="post-preview">
+                            I just shipped "Oldagram"—an Instagram feed clone built from a Figma design file with no starter code. This project took me through the complete frontend workflow: mobile-first CSS Flexbox layout, refactoring to reusable JavaScript templates, and implementing a custom state management system with a double-tap-to-like feature.
+                        </p>
+                    </article>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">My Learning Journal</p>
+            <p class="copyright">Copyright © 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger menu functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.getElementById('mainNav');
+        
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener('click', () => {
+                mainNav.classList.toggle('nav-open');
+                menuToggle.classList.toggle('menu-open');
+            });
+        }
+    </script>
+
+</body>
+</html>

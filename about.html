@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | My Learning Journal</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="My Learning Journal Logo" class="logo-img">
+                    <span>My Learning Journal</span>
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="main-nav" id="mainNav">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT ME</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="about-intro">
+            <div class="about-header">
+                <img src="images/article-image-hero.png" alt="Ahmed AbuBakr" class="about-profile-img">
+                <div class="about-header-text">
+                    <h1 class="about-title">Hi there! My name is Ahmed and welcome to my learning journal.</h1>
+                    <p class="about-intro-text">
+                        I'm excited to start a new learning journey as a Scrimba Full-Stack Developer Career Path student. I've made the big jump from data science to web development to get expert code reviews of my projects and meet like-minded peers. Based in the UAE, I'm building modern web applications and documenting my progress along the way.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <article class="about-content">
+            <h2 class="about-section-title">How I stay committed to learning</h2>
+            <p class="about-paragraph">
+                Building projects is my primary learning method. Rather than just watching tutorials, I dive into building real applications—from restaurant ordering systems to Instagram feed clones. Each project teaches me new concepts and reinforces what I've learned.
+            </p>
+            <p class="about-paragraph">
+                I maintain a consistent learning schedule, dedicating time each day to code, read documentation, and solve problems. The Scrimba platform's interactive approach has been transformative, allowing me to pause, experiment, and truly understand each concept before moving forward.
+            </p>
+
+            <h2 class="about-section-title">How I got started</h2>
+            <p class="about-paragraph">
+                My journey began in data science, working with Python, SQL, and Jupyter Notebooks on various analytics projects. While I enjoyed solving data problems, I realized I wanted to build things people could interact with directly—creating user experiences that solve real-world problems.
+            </p>
+            <p class="about-paragraph">
+                That's when I discovered Scrimba's Full-Stack Developer Career Path. The hands-on, project-based learning approach immediately resonated with me. Starting with foundational HTML and CSS, I've progressed to building interactive JavaScript applications, and I'm now working on more complex full-stack projects.
+            </p>
+            <p class="about-paragraph">
+                This learning journal documents my progress, the challenges I overcome, and the projects I build. Each post represents a milestone in my journey from data analyst to full-stack developer.
+            </p>
+        </article>
+
+        <section class="recent-posts">
+            <h2 class="recent-posts-title">Recent posts</h2>
+            <div class="posts-grid">
+                <a href="post.html" class="post-card-link">
+                    <article class="post-card">
+                        <img src="images/restaurant_app_images/restaurant-app-1.jpeg" alt="Jimmy's Diner restaurant ordering app interface" class="post-image">
+                        <p class="post-date">DECEMBER 10, 2025</p>
+                        <h3 class="post-title">Building Jimmy's Diner: My First Functional Ordering Engine</h3>
+                        <p class="post-preview">
+                            I just shipped my latest solo project: Jimmy's Diner—a fully functional ordering engine built from scratch with Vanilla JavaScript. This project taught me about data-driven UI rendering, state management, and the importance of properly resetting state (even when battling a "Ghost Cart" bug!).
+                        </p>
+                    </article>
+                </a>
+
+                <a href="oldagram-post.html" class="post-card-link">
+                    <article class="post-card">
+                        <img src="images/oldagram/oldagram_2.jpeg" alt="Oldagram Instagram clone interface" class="post-image">
+                        <p class="post-date">NOVEMBER 27, 2025</p>
+                        <h3 class="post-title">From Figma to Code: Building Oldagram</h3>
+                        <p class="post-preview">
+                            I just shipped "Oldagram"—an Instagram feed clone built from a Figma design file with no starter code. This project took me through the complete frontend workflow: mobile-first CSS Flexbox layout, refactoring to reusable JavaScript templates, and implementing a custom state management system with a double-tap-to-like feature.
+                        </p>
+                    </article>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">My Learning Journal</p>
+            <p class="copyright">Copyright © 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger menu functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.getElementById('mainNav');
+        
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener('click', () => {
+                mainNav.classList.toggle('nav-open');
+                menuToggle.classList.toggle('menu-open');
+            });
+        }
+    </script>
+
+</body>
+</html>

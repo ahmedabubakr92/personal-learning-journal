@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Figma to Code: Building Oldagram | My Learning Journal</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="My Learning Journal Logo" class="logo-img">
+                    <span>My Learning Journal</span>
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="main-nav" id="mainNav">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT ME</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="blog-post">
+            <p class="article-date">NOVEMBER 27, 2025</p>
+            <h1 class="blog-post-title">From Figma to Code: Building Oldagram</h1>
+            <p class="blog-post-intro">
+                I just shipped my latest solo project: <strong>"Oldagram"</strong>—an Instagram feed clone built entirely from a Figma design file with no starter code. The challenge? I was given a Figma design file and a blank text editor. This was a complete journey through the frontend workflow.
+            </p>
+            <img src="images/oldagram/oldagram_2.jpeg" alt="Oldagram Instagram clone interface showing the feed" class="blog-post-image">
+            
+            <h2 class="blog-section-title">The Build: Deconstructing Figma</h2>
+            <p class="blog-paragraph">
+                I started by deconstructing the Figma design, building the mobile-first layout from scratch using <strong>Semantic HTML</strong> and <strong>CSS Flexbox</strong>. This process taught me how to translate visual design into code structure—identifying spacing, typography, colors, and layout patterns from the design file.
+            </p>
+            <p class="blog-paragraph">
+                The mobile-first approach was crucial. By starting with the smallest screen size and building up, I ensured the layout would work perfectly on mobile devices before adapting to larger screens. This workflow taught me the importance of progressive enhancement and responsive design principles.
+            </p>
+
+            <h2 class="blog-section-title">The Logic: Refactoring to Reusable Templates</h2>
+            <p class="blog-paragraph">
+                Once the UI was pixel-perfect, I didn't stop there. I refactored the hard-coded sections into a <strong>reusable JavaScript template</strong>. Instead of manually writing HTML for each post, I created a function that could generate post HTML from data objects.
+            </p>
+            <img src="images/oldagram/oldagram_1.gif" alt="Oldagram double-tap-to-like feature in action" class="blog-post-image">
+            <p class="blog-paragraph">
+                This refactoring process was a major learning moment. It showed me the power of DRY (Don't Repeat Yourself) principles and how templates can make code more maintainable. If I needed to change the post structure, I only had to update it in one place, not throughout the entire HTML.
+            </p>
+
+            <h2 class="blog-section-title">The Interaction: Custom State Management</h2>
+            <p class="blog-paragraph">
+                I implemented a custom state management system where the feed is rendered dynamically from data. This means the entire feed can be controlled by a single data array, and changes to that array automatically update the UI. This pattern is fundamental to modern web development and gave me deep insight into how state-driven applications work.
+            </p>
+            <p class="blog-paragraph">
+                The state management system forced me to think carefully about data flow. When a user interacts with the app—liking a post, for example—I needed to update the state and then re-render only what changed. This taught me about the relationship between data and UI, a concept that translates directly to frameworks like React.
+            </p>
+
+            <h2 class="blog-section-title">Double-Tap-to-Like: Surgical DOM Updates</h2>
+            <p class="blog-paragraph">
+                One of the coolest features I implemented was a <strong>"double-tap-to-like"</strong> feature that updates the DOM surgically without re-rendering the whole page. When a user double-taps on a post image, the like count increments and the heart icon fills, but only that specific post's elements are updated.
+            </p>
+            <p class="blog-paragraph">
+                This feature taught me about efficient DOM manipulation. Instead of re-rendering the entire feed, I learned to target specific elements and update them directly. This approach is not only more performant but also provides a smoother user experience with no flickering or layout shifts.
+            </p>
+
+            <h2 class="blog-section-title">The Complete Frontend Workflow</h2>
+            <p class="blog-paragraph">
+                This project took me through the complete frontend workflow:
+            </p>
+            <ul class="blog-list">
+                <li><strong>Design Analysis:</strong> Breaking down the Figma file into components and patterns</li>
+                <li><strong>HTML Structure:</strong> Creating semantic, accessible markup</li>
+                <li><strong>CSS Styling:</strong> Mobile-first responsive design with Flexbox</li>
+                <li><strong>JavaScript Logic:</strong> Transforming static HTML into dynamic templates</li>
+                <li><strong>State Management:</strong> Building a data-driven application</li>
+                <li><strong>User Interactions:</strong> Implementing smooth, efficient DOM updates</li>
+            </ul>
+
+            <h2 class="blog-section-title">What I Learned</h2>
+            <p class="blog-paragraph">
+                It's an amazing feeling to watch a static image file turn into a living, clickable application. This project reinforced several key concepts:
+            </p>
+            <ul class="blog-list">
+                <li>The importance of starting with mobile-first design</li>
+                <li>How to translate design files into code structure</li>
+                <li>The power of reusable templates and DRY principles</li>
+                <li>State management in vanilla JavaScript</li>
+                <li>Efficient DOM manipulation techniques</li>
+                <li>The complete frontend development workflow</li>
+            </ul>
+
+            <p class="blog-paragraph">
+                A huge shoutout to <strong>Scrimba</strong> and <strong>Per Borgen</strong> for the challenge and guidance throughout this project!
+            </p>
+
+            <p class="blog-paragraph">
+                <strong><a href="https://calm-hamster-c88118.netlify.app" target="_blank" rel="noopener noreferrer">Check out the live demo here →</a></strong>
+            </p>
+
+            <p class="blog-paragraph" style="margin-top: 2em; padding-top: 1.5em; border-top: 1px solid #e0e0e0;">
+                👉 <strong><a href="https://scrimba.com/?via=u414bb3c" target="_blank" rel="noopener noreferrer">Check out Scrimba's Full-Stack Developer Career Path</a></strong><br>
+                <em style="font-size: 0.9375rem;">This is an affiliate link that helps support my learning journey at no extra cost to you. You may also receive a discount!</em>
+            </p>
+        </article>
+
+        <section class="recent-posts">
+            <h2 class="recent-posts-title">Recent posts</h2>
+            <div class="posts-grid">
+                <a href="post.html" class="post-card-link">
+                    <article class="post-card">
+                        <img src="images/restaurant_app_images/restaurant-app-1.jpeg" alt="Jimmy's Diner restaurant ordering app interface" class="post-image">
+                        <p class="post-date">DECEMBER 17, 2025</p>
+                        <h3 class="post-title">Building Jimmy's Diner: My First Functional Ordering Engine</h3>
+                        <p class="post-preview">
+                            I just shipped my latest solo project: Jimmy's Diner—a fully functional ordering engine built from scratch with Vanilla JavaScript. This project taught me about data-driven UI rendering, state management, and the importance of properly resetting state (even when battling a "Ghost Cart" bug!).
+                        </p>
+                    </article>
+                </a>
+
+                <a href="oldagram-post.html" class="post-card-link">
+                    <article class="post-card">
+                        <img src="images/oldagram/oldagram_2.jpeg" alt="Oldagram Instagram clone interface" class="post-image">
+                        <p class="post-date">NOVEMBER 27, 2025</p>
+                        <h3 class="post-title">From Figma to Code: Building Oldagram</h3>
+                        <p class="post-preview">
+                            I just shipped "Oldagram"—an Instagram feed clone built from a Figma design file with no starter code. This project took me through the complete frontend workflow: mobile-first CSS Flexbox layout, refactoring to reusable JavaScript templates, and implementing a custom state management system with a double-tap-to-like feature.
+                        </p>
+                    </article>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">My Learning Journal</p>
+            <p class="copyright">Copyright © 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger menu functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.getElementById('mainNav');
+        
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener('click', () => {
+                mainNav.classList.toggle('nav-open');
+                menuToggle.classList.toggle('menu-open');
+            });
+        }
+    </script>
+
+</body>
+</html>
+
